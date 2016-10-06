@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<style >
+
+body {
+  padding: 5px;
+}
+
+form {
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+form div + div {
+    margin-top: 1em;
+}
+label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90px;
+    text-align: justify;
+}
+
+select {
+
+    /* To give the same size to all text field */
+    width: 200px;
+}
+.button {
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 90px; /* same size as the label elements */
+}
+button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+}
+</style>
+<body>
+
+<form name="formortu">
+   <div>
+      <label for="sekolah_formortu">Sekolah :</label>
+	  <select name="sekolah_formortu" >
+	  	<option value="101">
+	  	101-Erenos
+	  	</option>
+	  	<option value="102">
+	  	102-XXXXX
+	  	</option>
+	  	<option value="103">
+	  	103-XXXXX
+	  	</option>
+	  	<option value="104">
+	  	104-XXXXX
+	  	</option>
+	  	<option value="105">
+	  	105-XXXXX
+	  	</option>
+	  </select>
+  </div>
+  <br>
+  <div>
+	  <label for="katagori_formortu">Katagori :</label>
+	  <select name="katagori_formortu" >
+	  	<option value="E">
+	  	Entry
+	  	</option>
+	  	<option value="K">
+	  	Knowledgable
+	  	</option>
+	  	<option value="T">
+	  	Top
+	  	</option>
+	  </select>
+  </div>
+  <br>
+  <div>
+	  <label for="kelas_formortu">Kelas :</label>
+	  <select name="kelas_formortu" >
+	  	<option value="3">
+	  	3 SD
+	  	</option>
+	  	<option value="4">
+	  	4 SD
+	  	</option>
+	  	<option value="5">
+	  	5 SD
+	  	</option>
+	  	<option value="6">
+	  	6 SD
+	  	</option>
+	  	<option value="7">
+	  	7 SMP
+	  	</option>
+	  	<option value="8">
+	  	8 SMP
+	  	</option>
+	  	<option value="9">
+	  	9 SMP
+	  	</option>
+	  </select>
+  </div>
+  <br>
+  <div>
+	  <label for="report_formortu">Jenis Report :</label>
+	  <select name="report_formortu" >
+	  	<option value="surat">
+	  	Surat Orang Tua
+	  	</option>
+	  	<option value="petunjuk">
+	  	Petunjuk Babak Online
+	  	</option>
+	  </select>
+  </div>
+  <br>
+  <div>
+	  <label for="peserta_formortu">Peserta :</label>
+	  <select name="peserta_formortu" >
+	  	<option value="10100001">
+	  	Sushi
+	  	</option>
+	  	<option value="10100002">
+	  	Spagetti
+	  	</option>
+	  	<option value="10100003">
+	  	Nasi Goreng
+	  	</option>
+	  </select>
+  </div>
+  <br>
+   <div class="button">
+        <button type="submit">Proses</button>
+    </div>
+</form> 
+
+
+</body>
+</html>
