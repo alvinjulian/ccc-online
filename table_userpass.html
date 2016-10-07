@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<title>Table Data User</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<div class="container">
+		<div class="col-xs-1 col-md-1">
+			
+		</div>
+		<div class="col-xs-10 col-md-10">
+			<div style="width:100%; height:100px; border:1px solid black; margin-top:1,75cm">
+					Header
+			</div>
+			<center>
+				<h1>Tabel User</h1>
+			</center>
+			<form>
+				<div class="form-group">
+					<label for="nama">Nama Anak</label>
+					<input type="text" name="namaanak" class="form-control" id="namaanak" placeholder="ex: John Doe">
+				</div>
+				<div class="form-group">
+					<label for="no">No Peserta</label>
+					<input type="text" name="nopeserta" class="form-control" id="nopeserta" placeholder="104156214XX">
+				</div>
+				<div class="form-group">
+					<label for="tingkat">Tingkat</label>
+					<select class="form-control" name="tingkatpendidikan" id="tingkatpendidikan">
+						<option value=""></option>
+						<option value="SD Kelas 3">SD Kelas 3</option>
+						<option value="SD Kelas 4">SD Kelas 4</option>
+						<option value="SD Kelas 5">SD Kelas 5</option>
+						<option value="SD Kelas 6">SD Kelas 6</option>
+						<option value="SMP Kelas 7">SMP Kelas 7</option>
+						<option value="SMP Kelas 8">SMP Kelas 8</option>
+						<option value="SMP Kelas 9">SMP Kelas 9</option>
+					</select>
+				</div>
+				<input type="submit" class="btn btn-primary" value="Search"></span>
+			</form>
+			<br>
+			<br>
+			<table width="100%" class="table table-striped table-bordered" id="tableData" cellspacing="1">
+				<thead>
+					<th>No Peserta</th>
+					<th>Nama Peserta</th>
+					<th>Nama Sekolah</th>
+					<th>Orang Tua</th>
+					<th>Email</th>
+					<th>Password</th>
+				</thead>
+				<tbody>
+					<td>102164643</td>
+					<td>Alldrich Putra S</td>
+					<td>SMP Santa Laurensia</td>
+					<td>Kinta Pratama</td>
+					<td>kintapratama@gmail.com</td>
+					<td>alldrich12332</td>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-xs-1 col-md-1">
+			
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+    	$('#tableData').DataTable();
+	} );
+</script>
+</html>
