@@ -1,4 +1,5 @@
 <?php
+//need auth to connect
 
 if($_POST['server_auth']=='cccOnlineAuth')
 {
