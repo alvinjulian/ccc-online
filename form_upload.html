@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Upload Form</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+	<link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+
+	<style type="text/css">
+
+		.container
+			{
+				width: 100%;
+				max-width: 680px; /* 800 */
+				text-align: center;
+				margin: 0 auto;
+			}
+		.dropzone
+			{
+				font-size: 2.5rem;
+				color: white;
+				background-color: #3498db;
+				position: relative;
+				padding: 50px;
+			}
+
+		.table-responsive
+		{
+			padding-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container" role="main">
+		<h3>Upload the file here:</h3>
+		<div class="upload">
+			<form action="/upload-target" class="dropzone"></form>
+		</div>
+
+		<div class="table-responsive">
+			<table class="table" align="center" style="text-align:center; width:100%" border="1">
+				<thead>
+					<th>No</th>
+					<th>Nomor Peserta</th>
+					<th>Nama Peserta</th>
+					<th>Tanggal Lahir</th>
+					<th>Bidang Studi</th>
+					<th>Kode Soal</th>
+				</thead>
+				<tr>
+					<td>1</td>
+					<td>1010311001</td>
+					<td>AGATHA FLOREINA</td>
+					<td>14/05/08</td>
+					<td>SD 3</td>
+					<td>1A</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
