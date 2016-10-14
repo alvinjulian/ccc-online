@@ -1,5 +1,5 @@
 <?php
-
+//Authentication Required
 
 if($_POST['server_auth']=='cccOnlineAuth')
 {
