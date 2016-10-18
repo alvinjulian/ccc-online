@@ -1,20 +1,17 @@
 <?php
 //Authentication Required
 
-if($_POST['server_auth']=='cccOnlineAuth')
-{
-	$mysqli=mysqli_connect("http://ccconline.cloudapp.net","root","CCCOnline123","ccc_online") or die("Cannot Connect.");
-	
-	//Set Timezone
-	$query="set time_zone = '+7:00'";
-	$stmt=$mysqli->prepare($query);
-	$stmt->execute();
-	$stmt->close();
-}
-else
-{
-	echo "Could not reach server!";
-	die();
-}
+     define('_HOST_NAME','localhost');
+     define('_DATABASE_NAME','ccc-online');
+     define('_DATABASE_USER_NAME','root');
+     define('_DATABASE_PASSWORD','');
+ 
+     $mysqli = new MySQLi(_HOST_NAME,_DATABASE_USER_NAME,_DATABASE_PASSWORD,_DATABASE_NAME);
+  
+     if($mysqli->connect_errno)
+     {
+       die("ERROR : -> ".$mysqli->connect_error);
+     }
 
+     return $mysqli;
 ?>
